@@ -1,6 +1,5 @@
 
 #include <iostream>
-#include "еепРкЦ╥╗╩Цвэ\Bubble_sort(ц╟ещеепР).h"
 
 int main(void)
 {
