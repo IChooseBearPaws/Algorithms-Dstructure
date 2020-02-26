@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\vs2017project\Algorithms-and-Data-structures\Algorithms--Data_structures\Algorithms--Data_structures\Algorithms%28算法%29;E:\vs2017project\Algorithms-and-Data-structures\Algorithms--Data_structures\Algorithms--Data_structures\Data_Structures%28数据结构%29;E:\vs2017project\Algorithms-and-Data-structures\Algorithms--Data_structures\Algorithms--Data_structures\main%28主函数%29;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -100,6 +101,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\vs2017project\Algorithms-and-Data-structures\Algorithms--Data_structures\Algorithms--Data_structures\Algorithms%28算法%29;E:\vs2017project\Algorithms-and-Data-structures\Algorithms--Data_structures\Algorithms--Data_structures\Data_Structures%28数据结构%29;E:\vs2017project\Algorithms-and-Data-structures\Algorithms--Data_structures\Algorithms--Data_structures\main%28主函数%29;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,6 +126,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main(主函数)\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Algorithms(算法)\排序算法汇总\Bubble_sort(冒泡排序).h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
