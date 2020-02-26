@@ -20,10 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Algorithms(算法)\Search_algorithm()\Order.h">
+    <ClInclude Include="Algorithms%28算法%29\Sorting_algorithm%28排序算法%29\Bubble.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Algorithms%28算法%29\Sorting_algorithm%28%29\Bubble.h">
+    <ClInclude Include="Algorithms%28算法%29\Search_algorithm%28查找算法%29\Order.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
