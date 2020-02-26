@@ -128,7 +128,8 @@
     <ClCompile Include="main(主函数)\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Algorithms%28算法%29\Sorting_algorithm%28%29\Bubble_sort.h" />
+    <ClInclude Include="Algorithms%28算法%29\Sorting_algorithm%28%29\Bubble.h" />
+    <ClInclude Include="Algorithms(算法)\Search_algorithm()\Order.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
