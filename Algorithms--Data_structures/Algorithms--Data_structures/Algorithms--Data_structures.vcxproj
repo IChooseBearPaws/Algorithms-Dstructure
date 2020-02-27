@@ -130,6 +130,7 @@
   <ItemGroup>
     <ClInclude Include="Algorithms%28算法%29\Sorting_algorithm%28排序算法%29\Bubble.h" />
     <ClInclude Include="Algorithms%28算法%29\Search_algorithm%28查找算法%29\Order.h" />
+    <ClInclude Include="Data_Structures(数据结构)\Queue(队列)\Queue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

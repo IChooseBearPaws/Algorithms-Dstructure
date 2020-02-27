@@ -26,5 +26,8 @@
     <ClInclude Include="Algorithms%28算法%29\Search_algorithm%28查找算法%29\Order.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Data_Structures(数据结构)\Queue(队列)\Queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
