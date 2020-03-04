@@ -1,16 +1,26 @@
 //算法头文件
+#include "Search_algorithm(查找算法)/Order.h"
 #include "Sorting_algorithm(排序算法)/Bubble.h"
+#include "Sorting_algorithm(排序算法)/Quick.h"
+#include "Sorting_algorithm(排序算法)/Select.h"
 
 //数据结构头文件
 #include "Queue(队列)/Queue.h"
 
-//标准库头文件
+//标准库文件
 #include <iostream>
 
 using namespace std;
 
+//顺序查找测试
+void ordertest();
 //冒泡排序测试
 void bubbleTest();
+//快速排序测试
+void quickTest();
+//选择排序测试
+void selectTest();
+
 //顺序队列测试
 void queueTest();
 
@@ -19,23 +29,29 @@ int main(void)
 
 	std::cout << "Welcome to algorithms and data structures." << std::endl;
 
+	//顺序查找测试
+	//ordertest();
 	//冒泡排序测试
-	bubbleTest();
+	//bubbleTest();
+	//快速排序测试
+	//quickTest();
+	//选择排序测试
+	selectTest();
 
 	//顺序队列测试
-	queueTest();
-
-
-
-
-
-
-
-
+	//queueTest();
 
 	std::cin.get();
 }
-
+//顺序查找测试
+void ordertest()
+{
+	int arr[5] = { 1, 3, 2, 4, 0 };
+	
+	cout << order(arr, 5, 0) << endl;
+	cout << order(arr, 5, 4) << endl;
+	cout << order(arr, 5, 9) << endl;
+}
 //冒泡排序测试
 void bubbleTest()
 {
@@ -47,6 +63,32 @@ void bubbleTest()
 		cout << Arr_d[i] << ", ";
 	cout << endl;
 }
+//快速排序测试
+void quickTest()
+{
+	int high;
+	cin >> high;
+	int *arr = new int[high];
+	for (int i = 0; i < high; i++)
+		cin >> arr[i];
+
+	quick(arr, 0, high-1);
+
+	for (int i = 0; i < high; i++)
+		cout << arr[i] << ",";
+}
+//选择排序测试
+void selectTest()
+{
+	int Arr[] = { 3, 1, 4, 2 , 6, 9, 5, 7, 8, 0 };
+	select(Arr, 10);
+	for (int i = 0; i < 10; i++)
+		cout << Arr[i] << ", ";
+	cout << endl;
+
+}
+
+
 
 //队列测试
 void queueTest()
