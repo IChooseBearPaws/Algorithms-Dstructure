@@ -1,8 +1,10 @@
 //算法头文件
 #include "Search_algorithm(查找算法)/Order.h"
 #include "Sorting_algorithm(排序算法)/Bubble.h"
+#include "Sorting_algorithm(排序算法)\Insertion.h"
 #include "Sorting_algorithm(排序算法)/Quick.h"
 #include "Sorting_algorithm(排序算法)/Select.h"
+
 
 //数据结构头文件
 #include "Queue(队列)/Queue.h"
@@ -32,11 +34,11 @@ int main(void)
 	//顺序查找测试
 	//ordertest();
 	//冒泡排序测试
-	//bubbleTest();
+	bubbleTest();
 	//快速排序测试
 	//quickTest();
 	//选择排序测试
-	selectTest();
+	//selectTest();
 
 	//顺序队列测试
 	//queueTest();
@@ -57,10 +59,12 @@ void bubbleTest()
 {
 	int Arr_i[] = { 3, 1, 4, 2 , 6, 9, 5, 7, 8, 0 };
 	double Arr_d[] = { 13.1, 21.3, 31.4, 0.31, 1.43, 6.52, 12.6, 19.75, 50.01, 30.33 };
-	bubble(Arr_i, 10);
-	bubble(Arr_d, 10);
+	//bubble(Arr_i, 10);
+	//bubble(Arr_d, 10);
+	insertion(Arr_i, 10);
+
 	for (int i = 0; i < 10; i++)
-		cout << Arr_d[i] << ", ";
+		cout << Arr_i[i] << ", ";
 	cout << endl;
 }
 //快速排序测试
