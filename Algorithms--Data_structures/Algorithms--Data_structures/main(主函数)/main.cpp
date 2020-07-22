@@ -7,10 +7,8 @@
 
 
 //数据结构头文件
+#include "List(线性表)/s_List.h"
 #include "Queue(队列)/Queue.h"
-
-//标准库文件
-#include <iostream>
 
 using namespace std;
 
@@ -24,7 +22,9 @@ void quickTest();
 void selectTest();
 
 //顺序队列测试
+void listTest();
 void queueTest();
+
 
 int main(void)
 {
@@ -34,17 +34,20 @@ int main(void)
 	//顺序查找测试
 	//ordertest();
 	//冒泡排序测试
-	bubbleTest();
+	//bubbleTest();
 	//快速排序测试
 	//quickTest();
 	//选择排序测试
 	//selectTest();
 
-	//顺序队列测试
+	//线性表测试
+	listTest();
+	//队列测试
 	//queueTest();
 
 	std::cin.get();
 }
+
 //顺序查找测试
 void ordertest()
 {
@@ -92,7 +95,38 @@ void selectTest()
 
 }
 
+//顺序线性表测试
+void listTest()
+{
+	s_List<int> list(-1);
+	s_List<double> d_list(8);
+	cout << d_list.ListLength() << endl;
+	cout << d_list.ListEmpty() << endl;
+	cout << d_list.ListInsert(1, 3.2) << endl;
+	cout << d_list.ListInsert(2, 5.5) << endl;
+	cout << d_list.ListInsert(5, 5.5) << endl;
+	cout << d_list.ListInsert(3, 7.9) << endl;
+	cout << d_list.ListInsert(3, 0.2) << endl;
+	cout << d_list.ListLength() << endl;
+	cout << d_list.ListEmpty() << endl;
+	cout << d_list.GetElem(1) << endl;
+	cout << d_list.GetElem(2) << endl;
+	cout << d_list.GetElem(3) << endl;
+	cout << d_list.GetElem(4) << endl;
+	cout << d_list.LocateElem(2.2) << endl;
+	cout << d_list.PriorElem(0.2) << endl;
+	cout << d_list.PriorElem(7.2) << endl;
+	cout << d_list.NextElem(1.1) << endl;
+	cout << d_list.NextElem(5.5) << endl;
+	s_List<int> i_list;
+	cout << i_list.ListEmpty() << endl;
+	cout << i_list.ListLength() << endl;
+	cout << i_list.ListInsert(1, 3) << endl;
+	cout << i_list.ListInsert(2, 5) << endl;
+	cout << i_list.ListLength() << endl;
+	cout << i_list.GetElem(1) << endl;
 
+}
 
 //队列测试
 void queueTest()

@@ -133,7 +133,9 @@
     <ClInclude Include="Algorithms(算法)\Sorting_algorithm(排序算法)\Insertion.h" />
     <ClInclude Include="Algorithms(算法)\Sorting_algorithm(排序算法)\Quick.h" />
     <ClInclude Include="Algorithms(算法)\Sorting_algorithm(排序算法)\Select.h" />
+    <ClInclude Include="Data_Structures(数据结构)\List(线性表)\s_List.h" />
     <ClInclude Include="Data_Structures(数据结构)\Queue(队列)\Queue.h" />
+    <ClInclude Include="Data_Structures(数据结构)\Stack(栈)\Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

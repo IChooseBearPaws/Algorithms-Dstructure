@@ -38,5 +38,11 @@
     <ClInclude Include="Algorithms(算法)\Sorting_algorithm(排序算法)\Insertion.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Data_Structures(数据结构)\Stack(栈)\Stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Data_Structures(数据结构)\List(线性表)\s_List.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
