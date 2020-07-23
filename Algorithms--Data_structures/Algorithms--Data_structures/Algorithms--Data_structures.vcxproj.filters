@@ -44,5 +44,8 @@
     <ClInclude Include="Data_Structures(数据结构)\List(线性表)\s_List.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Data_Structures%28数据结构%29\List%28线性表%29\l_List.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

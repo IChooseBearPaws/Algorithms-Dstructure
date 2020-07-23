@@ -1,4 +1,4 @@
-
+#pragma once
 #include <iostream>
 /*
  *	Sequential List - 线性表的顺序存储结构

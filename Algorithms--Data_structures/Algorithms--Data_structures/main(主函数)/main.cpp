@@ -8,6 +8,7 @@
 
 //数据结构头文件
 #include "List(线性表)/s_List.h"
+#include "List(线性表)/l_List.h"
 #include "Queue(队列)/Queue.h"
 
 using namespace std;
@@ -126,6 +127,18 @@ void listTest()
 	cout << i_list.ListLength() << endl;
 	cout << i_list.GetElem(1) << endl;
 
+	l_list<int> Llist;
+	Llist.ListInsert(3);
+	Llist.ListInsert(5);
+	Llist.ListInsert(7);
+
+	l_list<double> d_Llist;
+	d_Llist.ListInsert(1.12);
+	d_Llist.ListInsert(3.12);
+	d_Llist.ListInsert(4.12);
+	d_Llist.ListInsert(5.12);
+	cout << d_Llist.ListInsert(5, 6.3) << endl;
+	cout << d_Llist.ListInsert(2, 2.3) << endl;
 }
 
 //队列测试
