@@ -260,3 +260,7 @@ paket-files/
 __pycache__/
 *.pyc
 .vs
+*.vcxproj
+*.filters
+*.user
+*.sln

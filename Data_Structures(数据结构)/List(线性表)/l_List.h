@@ -54,7 +54,7 @@ bool l_list<T>::ListInsert(const T & item)
 template<class T>
 bool l_list<T>::ListInsert(int i, const T & item)
 {
-	if (i > 0 && i <= this->head->data + 1)
+	if (i > 0 && i <= this->head->data)
 	{
 		Node<T> *p, *s;
 		s = new Node<T>;

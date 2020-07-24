@@ -1,7 +1,7 @@
 //算法头文件
-#include "Search_algorithm(查找算法)/Order.h"
+
 #include "Sorting_algorithm(排序算法)/Bubble.h"
-#include "Sorting_algorithm(排序算法)\Insertion.h"
+#include "Sorting_algorithm(排序算法)/Insertion.h"
 #include "Sorting_algorithm(排序算法)/Quick.h"
 #include "Sorting_algorithm(排序算法)/Select.h"
 
@@ -53,7 +53,7 @@ int main(void)
 void ordertest()
 {
 	int arr[5] = { 1, 3, 2, 4, 0 };
-	
+
 	cout << order(arr, 5, 0) << endl;
 	cout << order(arr, 5, 4) << endl;
 	cout << order(arr, 5, 9) << endl;
@@ -80,7 +80,7 @@ void quickTest()
 	for (int i = 0; i < high; i++)
 		cin >> arr[i];
 
-	quick(arr, 0, high-1);
+	quick(arr, 0, high - 1);
 
 	for (int i = 0; i < high; i++)
 		cout << arr[i] << ",";
