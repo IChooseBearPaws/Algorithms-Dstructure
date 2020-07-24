@@ -137,6 +137,8 @@ T l_list<T>::ListDelet(int i)
 				p = p->next;
 				i--;
 			}
+			if (!(p->next->next))
+				rNode = p;
 			q = p->next;
 			_data = q->data;
 			p->next = q->next;
