@@ -4,6 +4,7 @@
 #include "Sorting_algorithm(排序算法)/Insertion.h"
 #include "Sorting_algorithm(排序算法)/Quick.h"
 #include "Sorting_algorithm(排序算法)/Select.h"
+#include "Search_algorithm(查找算法)/Order.h"
 
 
 //数据结构头文件
