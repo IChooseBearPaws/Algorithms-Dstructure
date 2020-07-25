@@ -264,4 +264,3 @@ __pycache__/
 *.filters
 *.user
 *.sln
-main.cpp
