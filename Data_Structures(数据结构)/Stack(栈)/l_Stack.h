@@ -18,6 +18,7 @@ class l_Stack
 {
 public:
 	l_Stack();		//构造函数初始化栈
+	l_Stack(const l_Stack & L);	//重写拷贝构造函数为深拷贝
 	bool StackEmpty() const;	//判是否为空栈
 	T GetTop();	//获取栈顶元素并返回其值
 	bool Push(const T& item);	//插入新元素至栈顶
@@ -35,6 +36,26 @@ l_Stack<T>::l_Stack()
 	head = new Node<T>;
 	head = NULL;
 	length = 0;
+}
+
+template<class T>
+l_Stack<T>::l_Stack(const l_Stack & L)
+{
+	this->head = new Node<T>;
+	length = L.length;
+	head->data = L.head->data;
+	int i = length;
+	Node<T> *ptr1, *ptr2;
+	ptr1 = head;
+	ptr2 = L.head;
+	while (--i > 0)
+	{
+		ptr1->next = new Node<T>;
+		ptr1 = ptr1->next;
+		ptr2 = ptr2->next;
+		ptr1->data = ptr2->data;
+	}
+	ptr1->next = ptr2->next;
 }
 
 template<class T>
