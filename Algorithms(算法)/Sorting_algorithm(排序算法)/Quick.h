@@ -1,12 +1,12 @@
 #pragma once
 
 /*
-	//Quick_sort ¡ª¡ª ¿ìËÙÅÅĞò
+	//Quick_sort Â¡ÂªÂ¡Âª Â¿Ã¬Ã‹Ã™Ã…Ã…ÃÃ²
 
 */
 
 
-template<class T>
+template<typename T>
 void quick(T* arr, int low, int high)
 {
 	int p = high - 1;
